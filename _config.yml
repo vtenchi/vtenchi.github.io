@@ -1,14 +1,11 @@
-title: NOZO.tech
+title: VTenchi
 author:
-  name: NOZO.tech
-  email: eliotvonecklie@gmail.com
+  name: VTenchi
+  email: social@vtenchi.group
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+description:
 
 # Build settings
 
@@ -26,7 +23,7 @@ minima:
   #
   # date_format: "%b %-d, %Y"
 
-  skin: dark
+  skin: vtenchi
 
   # Generate social links in footer.
   #

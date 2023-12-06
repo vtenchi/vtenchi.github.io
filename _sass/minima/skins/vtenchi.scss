@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+// VTenchi skin
+// ==============
+// Created by EliotVonEcklie <eliotvonecklie@gmail.com> using the VTenchi color palette.
+
+// This style sheet implements one option for the minima.skin setting:
+// "vtenchi" for light or dark mode depending on user preference.
+$vte-is-auto: true !default;
+
+
+// Color scheme
+// ------------
+
+$vte-base03:   #0062eb;
+$vte-base02:   #2b548d;
+$vte-base01:   #586e75;
+$vte-base00:   #657b83;
+$vte-base0:    #839496;
+$vte-base1:    #93a1a1;
+$vte-base2:    #f7f6f1;
+$vte-base3:    #f7f6f1;
+$vte-yellow:   #ffc34a;
+$vte-orange:   #ff7940;
+$vte-red:      #df5856;
+$vte-magenta:  #ebc0ff;
+$vte-violet:   #ffd4d5;
+$vte-blue:     #0062eb;
+$vte-cyan:     #92ffc1;
+$vte-green:    #92ffc1;
+
+
+// Mixed colors
+// ------------
+// While not part of the original vtenchi base tones, these derived tones
+// are meant to replicate the visual style of the classic skin. They should
+// not be used in cases where sufficiently contrasting colors are needed.
+
+$vte-light-mix1:  mix($vte-base1, $vte-base3);
+$vte-light-mix2:  mix($vte-blue, $vte-base00);
+$vte-light-mix3:  mix($vte-base2, $vte-base3);
+$vte-dark-mix1:   mix($vte-base01, $vte-base03);
+$vte-dark-mix2:   mix($vte-blue, $vte-base0);
+$vte-dark-mix3:   mix($vte-base02, $vte-base03);
+
+
+// Mode selection
+// --------------
+
+$vte-mono3:    $vte-base3;
+$vte-mono2:    $vte-base2;
+$vte-mono1:    $vte-base1;
+$vte-mono00:   $vte-base00;
+$vte-mono01:   $vte-base01;
+$vte-mix1:     $vte-light-mix1;
+$vte-mix2:     $vte-light-mix2;
+$vte-mix3:     $vte-light-mix3;
+
+@if $vte-is-auto {
+  :root {
+    --vtenchi-mono3:  #{$vte-base3};
+    --vtenchi-mono2:  #{$vte-base2};
+    --vtenchi-mono1:  #{$vte-base1};
+    --vtenchi-mono00: #{$vte-base00};
+    --vtenchi-mono01: #{$vte-base01};
+    --vtenchi-mix1:   #{$vte-light-mix1};
+    --vtenchi-mix2:   #{$vte-light-mix2};
+    --vtenchi-mix3:   #{$vte-light-mix3};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --vtenchi-mono3:  #{$vte-base03};
+      --vtenchi-mono2:  #{$vte-base02};
+      --vtenchi-mono1:  #{$vte-base01};
+      --vtenchi-mono00: #{$vte-base0};
+      --vtenchi-mono01: #{$vte-base1};
+      --vtenchi-mix1:   #{$vte-dark-mix1};
+      --vtenchi-mix2:   #{$vte-dark-mix2};
+      --vtenchi-mix3:   #{$vte-dark-mix3};
+    }
+  }
+
+  $vte-mono3:  var(--vtenchi-mono3);
+  $vte-mono2:  var(--vtenchi-mono2);
+  $vte-mono1:  var(--vtenchi-mono1);
+  $vte-mono00: var(--vtenchi-mono00);
+  $vte-mono01: var(--vtenchi-mono01);
+  $vte-mix1:   var(--vtenchi-mix1);
+  $vte-mix2:   var(--vtenchi-mix2);
+  $vte-mix3:   var(--vtenchi-mix3);
+}
+
+
+// Minima color variables
+// ----------------------
+
+$brand-color:           $vte-mono1 !default;
+$brand-color-light:     $vte-mix1 !default;
+$brand-color-dark:      $vte-mono00 !default;
+
+$site-title-color:      $vte-mono00 !default;
+
+$text-color:            $vte-mono01 !default;
+$background-color:      $vte-mono3 !default;
+$code-background-color: $vte-mono2 !default;
+
+$link-base-color:       $vte-blue !default;
+$link-visited-color:    $vte-mix2 !default;
+$link-hover-color:      $vte-mono00 !default;
+
+$border-color-01:       $brand-color-light !default;
+$border-color-02:       $vte-mono1 !default;
+$border-color-03:       $vte-mono00 !default;
+
+$table-text-color:      $vte-mono00 !default;
+$table-zebra-color:     $vte-mix3 !default;
+$table-header-bg-color: $vte-mono2 !default;
+$table-header-border:   $vte-mono1 !default;
+$table-border-color:    $vte-mono1 !default;
+
+
+// Syntax highlighting styles
+// --------------------------
+
+.highlight {
+  .c     { color: $vte-mono1; font-style: italic } // Comment
+  .err   { color: $vte-red } // Error
+  .k     { color: $vte-mono01; font-weight: bold } // Keyword
+  .o     { color: $vte-mono01; font-weight: bold } // Operator
+  .cm    { color: $vte-mono1; font-style: italic } // Comment.Multiline
+  .cp    { color: $vte-mono1; font-weight: bold } // Comment.Preproc
+  .c1    { color: $vte-mono1; font-style: italic } // Comment.Single
+  .cs    { color: $vte-mono1; font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: $vte-red } // Generic.Deleted
+  .gd .x { color: $vte-red } // Generic.Deleted.Specific
+  .ge    { color: $vte-mono00; font-style: italic } // Generic.Emph
+  .gr    { color: $vte-red } // Generic.Error
+  .gh    { color: $vte-mono1 } // Generic.Heading
+  .gi    { color: $vte-green } // Generic.Inserted
+  .gi .x { color: $vte-green } // Generic.Inserted.Specific
+  .go    { color: $vte-mono00 } // Generic.Output
+  .gp    { color: $vte-mono00 } // Generic.Prompt
+  .gs    { color: $vte-mono01; font-weight: bold } // Generic.Strong
+  .gu    { color: $vte-mono1 } // Generic.Subheading
+  .gt    { color: $vte-red } // Generic.Traceback
+  .kc    { color: $vte-mono01; font-weight: bold } // Keyword.Constant
+  .kd    { color: $vte-mono01; font-weight: bold } // Keyword.Declaration
+  .kp    { color: $vte-mono01; font-weight: bold } // Keyword.Pseudo
+  .kr    { color: $vte-mono01; font-weight: bold } // Keyword.Reserved
+  .kt    { color: $vte-violet; font-weight: bold } // Keyword.Type
+  .m     { color: $vte-cyan } // Literal.Number
+  .s     { color: $vte-magenta } // Literal.String
+  .na    { color: $vte-cyan } // Name.Attribute
+  .nb    { color: $vte-blue } // Name.Builtin
+  .nc    { color: $vte-violet; font-weight: bold } // Name.Class
+  .no    { color: $vte-cyan } // Name.Constant
+  .ni    { color: $vte-violet } // Name.Entity
+  .ne    { color: $vte-violet; font-weight: bold } // Name.Exception
+  .nf    { color: $vte-blue; font-weight: bold } // Name.Function
+  .nn    { color: $vte-mono00 } // Name.Namespace
+  .nt    { color: $vte-blue } // Name.Tag
+  .nv    { color: $vte-cyan } // Name.Variable
+  .ow    { color: $vte-mono01; font-weight: bold } // Operator.Word
+  .w     { color: $vte-mono1 } // Text.Whitespace
+  .mf    { color: $vte-cyan } // Literal.Number.Float
+  .mh    { color: $vte-cyan } // Literal.Number.Hex
+  .mi    { color: $vte-cyan } // Literal.Number.Integer
+  .mo    { color: $vte-cyan } // Literal.Number.Oct
+  .sb    { color: $vte-magenta } // Literal.String.Backtick
+  .sc    { color: $vte-magenta } // Literal.String.Char
+  .sd    { color: $vte-magenta } // Literal.String.Doc
+  .s2    { color: $vte-magenta } // Literal.String.Double
+  .se    { color: $vte-magenta } // Literal.String.Escape
+  .sh    { color: $vte-magenta } // Literal.String.Heredoc
+  .si    { color: $vte-magenta } // Literal.String.Interpol
+  .sx    { color: $vte-magenta } // Literal.String.Other
+  .sr    { color: $vte-green } // Literal.String.Regex
+  .s1    { color: $vte-magenta } // Literal.String.Single
+  .ss    { color: $vte-magenta } // Literal.String.Symbol
+  .bp    { color: $vte-mono1 } // Name.Builtin.Pseudo
+  .vc    { color: $vte-cyan } // Name.Variable.Class
+  .vg    { color: $vte-cyan } // Name.Variable.Global
+  .vi    { color: $vte-cyan } // Name.Variable.Instance
+  .il    { color: $vte-cyan } // Literal.Number.Integer.Long
+}
