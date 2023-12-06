@@ -12,8 +12,8 @@ $vte-is-auto: true !default;
 // Color scheme
 // ------------
 
-$vte-base03:   #0062eb;
-$vte-base02:   #2b548d;
+$vte-base03:   #182941;
+$vte-base02:   #214577;
 $vte-base01:   #586e75;
 $vte-base00:   #657b83;
 $vte-base0:    #839496;
@@ -99,7 +99,7 @@ $brand-color:           $vte-mono1 !default;
 $brand-color-light:     $vte-mix1 !default;
 $brand-color-dark:      $vte-mono00 !default;
 
-$site-title-color:      $vte-mono00 !default;
+$site-title-color:      mix($vte-blue, $vte-violet) !default;
 
 $text-color:            $vte-mono01 !default;
 $background-color:      $vte-mono3 !default;
