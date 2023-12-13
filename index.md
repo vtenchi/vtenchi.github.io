@@ -1,9 +1,18 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
+layout: default
+title: "Happy coding"
 ---
+
+<div class="py-24 max-w-xl mx-auto text-center">
+  <h1 class="text-xl mb-12">
+    <span class="text-4xl block">
+      Jekyllwind
+    </span>
+
+    <span class="uppercase font-light">
+      A Jekyll + Tailwind CSS boilerplate
+    </span>
+  </h1>
+
+  <h2>Build something beautiful with it ✌️</h2>
+</div>
