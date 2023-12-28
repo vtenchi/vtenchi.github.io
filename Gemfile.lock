@@ -41,6 +41,7 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    json (2.7.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -93,26 +94,13 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  aarch64-linux
-  aarch64-linux-android
-  aarch64-linux-gnu
-  aarch64-linux-musl
-  arm-linux-androideabi
-  arm-linux-gnueabihf
-  arm-linux-musleabihf
-  arm64-darwin
-  x86-linux
-  x86-linux-android
-  x86-linux-gnu
-  x86-linux-musl
-  x86_64-darwin
-  x86_64-linux-android
-  x86_64-linux-gnu
-  x86_64-linux-musl
+  x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   jekyll
   jekyll-postcss
+  json
   webrick
 
 BUNDLED WITH
