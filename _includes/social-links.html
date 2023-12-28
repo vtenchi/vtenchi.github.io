@@ -1,0 +1,18 @@
+<ul class="flex space-x-4">
+    {% for entry in include.socials %}
+        <li>
+            <a href="{{ entry.url }}" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                {% if entry.alt %}
+                    <div class="flex flex-row space-x-2">
+                {% endif %}
+
+                {% include social-icons/{{ entry.platform }}.liquid %}
+
+                {% if entry.alt %}
+                        <span class="text-sm">ALT</span>
+                    </div>
+                {% endif %}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
