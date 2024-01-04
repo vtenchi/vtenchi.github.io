@@ -1,0 +1,85 @@
+- name: 'Nika'
+  position: 'General Manager'
+  quote: '*“Confidence is 10% hard work and 90% delusion.”*'
+  image: 'blank.png'
+  socials:
+    - platform: 'twitter'
+      url: 'https://twitter.com/Nika_Tenchi'
+
+    - platform: 'twitter'
+      url: 'https://twitter.com/VAuditions'
+      alt: true
+
+- name: 'MockiN6j4y'
+  position: 'Artist and Editor'
+  quote: '*Pondering many ponderings.*'
+
+  image: 'mockin6j4y.png'
+  socials:
+    - platform: 'youtube'
+      url: 'https://youtube.com/@MockiN6j4yOfficial'
+
+    - platform: 'youtube'
+      url: 'https://youtube.com/@MockiN6j4y'
+      alt: true
+
+    - platform: 'instagram'
+      url: 'https://instagram.com/mockin6j4y'
+
+    - platform: 'twitter'
+      url: 'https://twitter.com/MockiN6j4y'
+
+    - platform: 'twitch'
+      url: 'https://www.twitch.tv/mockin6j4y'
+
+- name: 'Pum'
+  position: 'Artist'
+  quote: |
+    *"friendship is like pissing yourself - everyone can see it, but only you can feel its warmth!"*
+
+    *"is chestnut just another word for lactation?"*
+
+  image: 'blank.png'
+  socials:
+
+- name: 'talaydesu'
+  position: 'Social Manager'
+  quote: '*"yummy yummy! hungey and sleepy 25/8"*'
+  image: 'talaydesu.png'
+  socials:
+    - platform: 'twitch'
+      url: 'https://twitch.tv/talaydesu'
+
+    - platform: 'twitter'
+      url: 'https://twitter.com/talaydesu'
+
+    - platform: 'youtube'
+      url: 'https://youtube.com/@talaydesu'
+
+    - platform: 'facebook'
+      url: 'https://facebook.com/talaydesu'
+
+- name: 'Finch'
+  position: 'Illustrator, Model Artist'
+  quote: |
+    <div class="no-format">
+      <em>"Little bird, big skill"</em>
+      <br>
+      You may call me Finch! It's very nice to meet you! As a member of the production team, I handle any illustration, model art, and graphic design needs that our talents may have!
+    </div>
+
+  image: 'finch.png'
+  socials:
+    - platform: 'twitter'
+      url: 'https://twitter.com/vtenchi_finch'
+
+- name: 'Zenchis'
+  position: 'Illustrator, Editor'
+  quote: '*"I am the bone of my sword."*'
+  image: 'blank.png'
+  socials:
+    - platform: 'twitter'
+      url: 'https://twitter.com/zenchis_'
+
+    - platform: 'twitch'
+      url: 'https://twitch.tv/zenchis_'
